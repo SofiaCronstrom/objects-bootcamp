@@ -58,12 +58,28 @@
 // console.log(usersByNationality)
 
 ////Filter by email
-function usersEmail (users){
+// function usersEmail (users){
 
-    return users.map( user => user.email);
- }
- let emailAdresses = usersEmail(users);
+//     return users.map( user => user.email);
+//  }
+//  let emailAdresses = usersEmail(users);
  
  
- console.log(emailAdresses);
+//  console.log(emailAdresses);
+
+////Reformat emails
+
+function changeEmails(users) {
+    return users.map(user => {
+        let newEmail = `${user.name.last}.${user.name.first}@evilcorp.${user.nat}`;
+        return newEmail.toLowerCase().replace(/\s/g, "");
+    });
+}
+
+// Exempel på hur man använder funktionen
+let newEmails = changeEmails(users);
+console.log(newEmails);
+
+
+
 
