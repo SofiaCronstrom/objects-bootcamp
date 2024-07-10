@@ -1,6 +1,6 @@
 // ///BIBBLAN
 // //1.
-// let book = {
+// const book = {
 //     title: "To Kill a Mockingbird",
 //     author: "Harper Lee",
 //     numPages: 281
@@ -24,23 +24,36 @@
 
 // console.log(findBookByTitle(books, "hej hopp"))
 
+
+
 ////LETTER FREQUENCY
 
-
-function lettersToCount(str){
+// function lettersToCount(str){
     
-    let obj = {};
+//     let obj = {};
 
-    for (let char of str){
-       if (obj[char]){
-        obj[char]++
-       } else{
-        obj[char] = 1;
-       }
-    }
-    return obj;
-}
+//     for (let char of str){
+//        if (obj[char]){
+//         obj[char]++
+//        } else{
+//         obj[char] = 1;
+//        }
+//     }
+//     return obj;
+// }
 
-let letterFreq = lettersToCount("det var en gång en liten kanin som hette Hoppsan");
+// let letterFreq = lettersToCount("det var en gång en liten kanin som hette Hoppsan");
 
-console.log(letterFreq);
+// console.log(letterFreq);
+
+
+////Filter By Country
+// function filterUsersByAreaCode (users, areaCode){
+
+//    return users.filter( user => user.nat === areaCode);
+// }
+// let nationality = "FR"
+// let usersByNationality = filterUsersByAreaCode(users, nationality);
+
+// console.log(usersByNationality)
+
