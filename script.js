@@ -57,3 +57,13 @@
 
 // console.log(usersByNationality)
 
+////Filter by email
+function usersEmail (users){
+
+    return users.map( user => user.email);
+ }
+ let emailAdresses = usersEmail(users);
+ 
+ 
+ console.log(emailAdresses);
+
